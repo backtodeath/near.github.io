@@ -1,8 +1,7 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME ||'backtodeath-web'
+const CONTRACT_NAME = require('./contract-name')
 
 function getConfig(env) {
   switch (env) {
-
   case 'production':
   case 'mainnet':
     return {
