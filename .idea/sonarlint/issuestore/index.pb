@@ -7,10 +7,6 @@ O
 src/environments/environment.ts,9\e\9e665cec867bbf89b5afc6420722808938387dc4
 T
 $src/environments/environment.prod.ts,c\7\c7c271980f0e24b4ca8172b2c15322f125123fad
-R
-"src/app/services/window.service.ts,e\1\e17540c51cb502ed5dd4d923f53d661cfa3c9bb6
-H
-src/app/app.component.ts,3\0\302be76b17ec3188653bea112207e65dde129e59
 E
 src/app/app.module.ts,0\2\02c004b4329a0d99c45abb61a30dadfde61ecf5d
 k
