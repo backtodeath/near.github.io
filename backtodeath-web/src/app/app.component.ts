@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
   constructor(@Inject(WINDOW) private window: Window) {}
 
   ngOnInit(): void {
-    this.fetchPreviousVisitor();
-    this.fetchNumberOfConnections();
+    this.fetchPreviousVisitor()
+    this.fetchNumberOfConnections()
   }
 
   login(): void {
@@ -46,13 +46,13 @@ export class AppComponent implements OnInit {
 
   async fetchPreviousVisitor(): Promise<void> {
     if (this.signedIn) {
-      this.previousVisitor = await this.window.contract.show_previous_visitor();
+      this.previousVisitor = await this.window.contract.show_previous_visitor()
     }
   }
 
   async fetchNumberOfConnections(): Promise<void> {
     if (this.signedIn) {
-      this.numberOfConnections = await this.window.contract.show_total_number_of_visitors();
+      this.numberOfConnections = await this.window.contract.show_total_number_of_visitors()
     }
   }
 
