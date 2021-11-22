@@ -35,6 +35,9 @@ MIT
 @angular/platform-browser
 MIT
 
+@angular/router
+MIT
+
 base-x
 MIT
 The MIT License (MIT)
@@ -393,7 +396,7 @@ depd
 MIT
 (The MIT License)
 
-Copyright (c) 2014-2017 Douglas Christopher Wilson
+Copyright (c) 2014-2018 Douglas Christopher Wilson
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
