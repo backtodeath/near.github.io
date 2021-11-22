@@ -1,0 +1,9 @@
+.sector {
+    margin: 3%;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 40px;
+    padding: 25px;
+    border: 10px solid lightcyan;
+}

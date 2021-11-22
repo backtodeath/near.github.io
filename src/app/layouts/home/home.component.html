@@ -1,0 +1,27 @@
+<div class="page">
+    <button class="logout-button" (click)="logout()">Sign out</button>
+    <div class="welcome">
+        <h3 class="top">
+            {{ accountId }}
+            <label>welcome to metaverse {{contractId}}</label>
+        </h3>
+    </div>
+    <div class="container">
+        <div class="sector">
+            <a [routerLink]="['/visitors/']">
+                Check visitors
+            </a>
+        </div>
+        <div class="sector">
+            <a [routerLink]="['/guest-book/']">
+                Check guest book
+            </a>
+        </div>
+        <div class="sector">
+            <a>
+                TBD
+            </a>
+        </div>
+    </div>
+    <app-notification [accountId]="accountId" [contractId]="contractId" *ngIf="showNotification"></app-notification>
+</div>

@@ -1,0 +1,44 @@
+<div class="page">
+    <button class="logout-button" (click)="logout()">Sign out</button>
+    <div class="container">
+        <div class="sector" style="width: 20%">
+            <label>Total number of connections:</label>
+            <br>
+            {{ numberOfConnections }}
+            <br>
+            <button [ngStyle]="{ borderRadius: '0 5px 5px 0' }" (click)="fetchNumberOfConnections()">
+                Refresh
+            </button>
+        </div>
+        <div class="sector" style="width: 37%">
+            <form (ngSubmit)="onSubmit($event)">
+                <fieldset id="fieldset">
+                    <label for="visitor">Visit with name</label>
+                    <div [ngStyle]="{ display: 'flex' }">
+                        <input
+                                [ngStyle]="{ flexGrow: 1 }"
+                                type="text"
+                                id="visitor"
+                                name="visitor"
+                                autoComplete="off"
+                                [(ngModel)]="newVisitor"
+                                required
+                        />
+                        <button [ngStyle]="{ borderRadius: '0 5px 5px 0' }" type="submit">
+                            Visit
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="sector" style="width: 20%">
+            <label>Last visitor:</label>
+            <br>
+            {{ previousVisitor }}
+            <br>
+            <button [ngStyle]="{ borderRadius: '0 5px 5px 0' }" (click)="fetchPreviousVisitor()">
+                Refresh
+            </button>
+        </div>
+    </div>
+</div>
